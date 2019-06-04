@@ -8,6 +8,6 @@
 - Note: If there are new thingsboard build need to update the new link of deb file inside the dockerfile
 
 # Deploy container
-- Option 1 (No volumne mapping): sudo ./docker-run.sh
+- Option 1 (No volumns mapping): sudo ./docker-run.sh
 - Option 2 (Fresh data): sudo docker run -d -v ~/.mytb-gateway-data:/etc/tb-gateway/conf -v ~/.mytb-gateway-logs:/var/log/tb-gateway/ --name tb-gateway-instance tb-gate-way
 - Option 3 (Using config file from this source code): Edit acccess token inside docker-compose.yml then running "docker-compose up".
