@@ -4,8 +4,10 @@
 - Run "sudo ./docker-build.sh"
 
 # Deploy container
-- Edit acccess token inside docker-compose.yml
-- sudo ./docker-run.sh
+
+- Option 1: sudo ./docker-run.sh
+- Option 2: sudo docker run -d -v ~/.mytb-gateway-data:/etc/tb-gateway/conf -v ~/.mytb-gateway-logs:/var/log/tb-gateway/ --name tb-gateway-instance tb-gate-way
+- Option 3: Edit acccess token inside docker-compose.yml then run "docker-compose up"
 
 # Build and push docker image
 - make push
