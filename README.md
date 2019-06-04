@@ -3,7 +3,7 @@
 # Build docker image
 - Run "sudo ./docker-build.sh"
 
-# Deploy docker
+# Deploy container
 - Edit acccess token inside docker-compose.yml
 - sudo ./docker-run.sh
 
