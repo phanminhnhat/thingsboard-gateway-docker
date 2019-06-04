@@ -1,4 +1,4 @@
-PROJECT=gmatheu
+PROJECT=pmnhat
 APP=thingsboard-gateway
 
 build:
