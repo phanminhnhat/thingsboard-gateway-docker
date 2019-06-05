@@ -17,6 +17,8 @@
 
 dpkg -i /tb-gateway.deb
 
+apt-get -f install
+
 # Copying env variables into conf files
 printenv | awk -F "=" '{print "export " $1 "='\''" $2 "'\''"}' >> /usr/share/tb-gateway/conf/tb-gateway.conf
 
