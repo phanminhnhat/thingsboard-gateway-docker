@@ -17,7 +17,9 @@
 FROM openjdk:8-jre
 
 RUN wget -O tb-gateway.deb https://github.com/thingsboard/thingsboard-gateway/releases/download/2.2.1rc/tb-gateway-2.2.1rc.deb \
+  && apt-get update \
   && dpkg -i tb-gateway.deb \
+  && apt-get -f install -y \
   && rm tb-gateway.deb
 ADD run-application.sh /run-application.sh
 RUN chmod +x /run-application.sh
