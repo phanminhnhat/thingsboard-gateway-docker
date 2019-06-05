@@ -4,8 +4,6 @@ APP=thingsboard-gateway
 
 build:
 	docker build --pull -t ${PROJECT}/${APP}:latest .
-	rm tb-gateway.deb
-
 push: build
 	docker push ${PROJECT}/${APP}:${VERSION}
 	docker push ${PROJECT}/${APP}:latest
