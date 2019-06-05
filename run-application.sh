@@ -16,6 +16,7 @@
 #
 
 # Copying env variables into conf files
+rm /usr/share/tb-gateway/conf/tb-gateway.conf
 printenv | awk -F "=" '{print "export " $1 "='\''" $2 "'\''"}' >> /usr/share/tb-gateway/conf/tb-gateway.conf
 
 cat /usr/share/tb-gateway/conf/tb-gateway.conf
