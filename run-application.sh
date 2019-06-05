@@ -15,8 +15,6 @@
 # limitations under the License.
 #
 
-dpkg -i /tb-gateway.deb
-
 apt-get -f install -y
 
 # Copying env variables into conf files
