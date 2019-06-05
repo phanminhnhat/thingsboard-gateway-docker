@@ -21,10 +21,10 @@ services:
     image: "pmnhat/thingsboard-gateway:latest"
     environment:
       - GATEWAY_ACCESS_TOKEN=nog1NVyZw12QlG8M7UGJ
-      - GATEWAY_HOST=127.0.0.1
+      - GATEWAY_HOST=10.128.224.206
     volumes: 
-      - ./configs/conf:/usr/share/tb-gateway/conf
+      - ~/.mytb-gateway-data:/etc/tb-gateway/conf 
+      - ~/.mytb-gateway-logs:/var/log/tb-gateway/
     ports:
-      - "9090:9090"
+      - "9091:9090"
     entrypoint: /run-application.sh
-    network_mode: "host"
