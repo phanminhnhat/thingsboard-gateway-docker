@@ -21,3 +21,4 @@ RUN wget -O tb-gateway.deb https://github.com/thingsboard/thingsboard-gateway/re
 RUN dpkg -i tb-gateway.deb; exit 0
 ADD run-application.sh /run-application.sh
 RUN chmod +x /run-application.sh
+RUN apt-get -f install -y
