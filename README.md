@@ -12,7 +12,7 @@
 
 # Deploy container
 - Option 1 : sudo ./docker-run.sh
-- Option 2 (Fresh data): sudo docker run -d -v ~/.mytb-gateway-data:/etc/tb-gateway/conf -v ~/.mytb-gateway-logs:/var/log/tb-gateway/ --name tb-gateway-instance tb-gate-way --entrypoint "/run-application.sh"
+- Option 2 (Fresh data): sudo docker run -d -v ~/.mytb-gateway-data:/etc/tb-gateway/conf -v ~/.mytb-gateway-logs:/var/log/tb-gateway/ --name tb-gateway-instance pmnhat/thingsboard-gateway --entrypoint "/run-application.sh"
 - Option 3 (Using config file from this source code): 
   - Edit acccess token inside docker-compose.yml
   - Run "docker-compose up".
