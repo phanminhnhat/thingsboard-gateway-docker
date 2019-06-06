@@ -1,4 +1,4 @@
-# Thingsboard Gateway docker image [![](https://images.microbadger.com/badges/version/gmatheu/thingsboard-gateway.svg)](https://microbadger.com/images/gmatheu/thingsboard-gateway "Get your own version badge on microbadger.com")
+# Thingsboard Gateway Docker Image [![](https://images.microbadger.com/badges/version/gmatheu/thingsboard-gateway.svg)](https://microbadger.com/images/gmatheu/thingsboard-gateway "Get your own version badge on microbadger.com")
 
 # Deploy container
 - git clone https://github.com/phanminhnhat/thingsboard-gateway-docker.git
