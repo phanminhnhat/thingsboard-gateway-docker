@@ -25,3 +25,4 @@ RUN apt-get -f install -y
 RUN mkdir /tmp/tb-gateway \
   && mkdir /tmp/tb-gateway/conf \
   && cp -a /etc/tb-gateway/conf/. /tmp/tb-gateway/conf
+RUN rm tb-gateway.deb
