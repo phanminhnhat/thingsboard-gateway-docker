@@ -15,6 +15,9 @@
 # limitations under the License.
 #
 
+# Moving file config into mounted folder when it is not available at the first time.
+mv -v -n /tmp/tb-gateway/conf/* /etc/tb-gateway/conf/
+
 # Copying env variables into conf files
 rm /usr/share/tb-gateway/conf/tb-gateway.conf
 printenv | awk -F "=" '{print "export " $1 "='\''" $2 "'\''"}' >> /usr/share/tb-gateway/conf/tb-gateway.conf
